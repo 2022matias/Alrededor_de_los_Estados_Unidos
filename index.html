@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pages/index.css">
+  <title>Alrededor de los EE.UU.</title>
+</head>
+
+<body>
+  <div class="page">
+    <header class="header">
+      <img src="./images/Logo.png" class="header__logo" alt="logo que dice Around the U.S.">
+      <img src="./images/Line.png" class="header__line" alt="linea que separa el encabezado del resto de la pagina">
+    </header>
+    
+    <section class="profile">
+      <img src="./images/Avatar.png" class="profile__avatar" alt="imagen de Jacques Cousteau">
+      <div class="profile__info">
+        <h2 class="profile__jacques">Jacques Cousteau</h2>
+        <img src="./images/edit-button.png" class="profile__edit-button" alt="boton para editar el perfil">
+        <p class="profile__explorer">explorer</p>
+      </div>
+      <img src="./images/add-button.png" class="profile__add-button" alt="boton para agregar imagenes">
+    </section>
+
+    <section class="popup popup-visible">
+      <form class="popup__container" novalidate>
+        <img src="./images/close-icon.png" class="popup__close-icon" alt="boton para cerrar el formulario">
+        <h3 class="popup__tittle">Editar perfil</h3>
+          <input id="popup__name-input" type="text" class="popup__name popup__input" placeholder="Inserte su Nombre" minlength="2" maxlength="40" required>
+          <span class="popup__name-input-error"></span>
+          <input id="popup__skill-input" type="text" class="popup__skill popup__input" placeholder="Inserte su Skill" minlength="2" maxlength="200" required>
+          <span class="popup__skill-input-error"></span>
+        <button class="popup__button">Guardar</button>
+      </form>
+      <div class="fondo"></div>
+    </section>
+
+    <section class="popup popup_card visibility">
+      <form class="popup__container popup__container_card">
+        <img src="./images/close-icon.png" class="popup__close-icon-card" alt="boton para cerrar el formulario">
+        <h3 class="popup__title">Nuevo lugar</h3>
+        <input id="popup__place-input" type="text" class="popup__place popup__input" placeholder="Título" minlength="2" maxlength="30" required>
+        <span class="popup__place-input-error"></span>
+        <input id="popup__url-input" type="url" class="popup__url popup__input" placeholder="Enlace a la imagen">
+        <span class="popup__url-input-error"></span>
+        <button class="popup__button">Crear</button>
+      </form>
+      <div class="fondo"></div>
+    </section>
+    
+    <section class="elements"></section>
+
+
+
+
+    <template id="elements">
+      <article class="element">
+        <img src="https://code.s3.yandex.net/web-code/yosemite.jpg" class="element__image" alt="foto del valle de yosemite">
+        <div class="element__background">
+          <div class="element__info">
+            <h3 class="element__name"></h3>
+            <button class="element__heart"></button>
+            <button class="element__trash"></button>
+          </div>
+        </div>
+      </article>
+    </template>
+
+    <section class="enlarge-image no-vision">
+      <div class="enlarge-image__container">
+        <h3 class="enlarge-image__title"></h3>
+        <img src="https://code.s3.yandex.net/web-code/yosemite.jpg" class="enlarge-image__image" alt="imagen ampliada">
+        <img src="./images/close-icon.png" class="enlarge-image__close-image" alt="boton para cerrar el formulario">
+      </div>
+      <div class="fondo"></div>
+    </section>
+
+    <footer>
+      <p class="footer">© 2021 Alrededor de los EEUU</p>
+    </footer>
+    <script src="index.js"></script>
+    <script src="validate.js"></script>
+  </div>
+</body>
+</html>
