@@ -1,6 +1,6 @@
 # Proyecto 4: Alrededor de los Estados Unidos
 ### Aquí dejo el link para poder visualizar el proyecto en vivo.
-(https://2022matias.github.io/web_project_6_es/)
+(https://2022matias.github.io/Alrededor_de_los_Estados_Unidos/)
 
 ## Red Social creada con la finalidad de aplicar conceptos ya vistos anteriormente pero con la inclusion fundamental de los siguientes en Javascrip:
 *Manejo del Dom
